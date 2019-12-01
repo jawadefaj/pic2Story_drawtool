@@ -90,9 +90,10 @@ function gettext_GPT(){
          url:url,
          success:function(json){
              // do stuff with json (in this case an array)
-             alert("Success");
-             console.log(json);
-             p.innerHTML = JSON.parse(json).data;
+             //console.log(json);
+             output = JSON.parse(json).data;
+             
+             p.innerHTML = output;
          },
          error:function(){
              alert("Error");
