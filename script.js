@@ -74,9 +74,9 @@ function saveFile(){
     
     temp_image = _image;
     
-    console.log(bitmap_image);
+    //console.log(bitmap_image);
     
-    console.log(temp_image);
+    //console.log(temp_image);
     
     gettext_GPT();
     
@@ -88,15 +88,16 @@ function gettext_GPT(){
     
     $.ajax({
          url:url,
-         dataType: 'jsonp', // Notice! JSONP <-- P (lowercase)
          success:function(json){
              // do stuff with json (in this case an array)
              alert("Success");
              console.log(json);
+             p.innerHTML = JSON.parse(json).data;
          },
          error:function(){
              alert("Error");
          }      
     });
 }
+
 
