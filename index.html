@@ -3,6 +3,7 @@
     <head>
         <title>Pic2Story_canvas</title>
         <link rel = "Sylesheet" href = "style.css">
+        <script src="jquery-3.4.1.min.js"></script>
     </head>
     <body>
         <canvas id = "canvas" width="800" height="600"></canvas>
@@ -12,8 +13,11 @@
                    step = "2" value = "5">
             <button id = "saver">Generate Story</button>
         </div>
-        <img src = "" id = "image">
-        <script src = "script.js"></script>
+        <div class="GPT">
+            <img src = "" id = "image">
+            <script src = "script.js"></script>
+            <p id="story"></p>
+        </div>
     </body>
     
 </html>
